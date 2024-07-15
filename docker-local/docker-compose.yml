@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  mysql-core:
+    image: mysql:8.0
+    container_name: soccer-mysql
+    volumes:
+      - ./seeds/seed:/seed
+      - ./seeds/seed/mysql-core/mysql-local-dump.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: local
+    networks:
+      - soccermanager
+
+networks:
+  soccermanager:
+    driver: bridge

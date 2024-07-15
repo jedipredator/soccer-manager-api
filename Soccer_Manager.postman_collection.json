@@ -1,0 +1,513 @@
+{
+	"info": {
+		"_postman_id": "c3ac873b-f30b-46db-b842-b37e089705cf",
+		"name": "Soccer Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"sasadanilovic@yahoo.com\",\r\n    \"password\" : \"soccman321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sign-up"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up  User2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"miled@yahoo.com\",\r\n    \"password\" : \"soccexpo1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sign-up"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"sasadanilovic@yahoo.com\",\r\n    \"password\" : \"soccman321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate User2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"miled@yahoo.com\",\r\n    \"password\" : \"soccexpo1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User with all data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYXNhZGFuaWxvdmljQHlhaG9vLmNvbSIsImV4cCI6MTYzODEwNDI1MywiaWF0IjoxNjM4MTAwNjUzfQ.MPjJ_VHL4DvkqfbV5hsyYC_xjUqYYv3ZaQtZpU5Tp5SHmoJV__13k9EAHonD2mzeDNRr6ut-UmTiGtpXoq1Ryw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users/ead0281a-be12-407b-a4b5-06c8829fdfc2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"ead0281a-be12-407b-a4b5-06c8829fdfc2"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User with all data User2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtaWdodHlAZ21haWwuY29tIiwiZXhwIjoxNjM4MTA0MjgwLCJpYXQiOjE2MzgxMDA2ODB9.dfaqmuhNccEXnEVRhDUaUpUy12FVBxIDc3zYSaWf1tp5AJ92Ey4M6k4QbWwYL2SdI5hwA_Fv8L89lf3RqyCBJQ"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users/9d9695bb-513e-49bc-ab56-6f2e7d29b5cf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"9d9695bb-513e-49bc-ab56-6f2e7d29b5cf"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all active offers on Transfer list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYXNhZGFuaWxvdmljQHlhaG9vLmNvbSIsImV4cCI6MTYzODEwNDI1MywiaWF0IjoxNjM4MTAwNjUzfQ.MPjJ_VHL4DvkqfbV5hsyYC_xjUqYYv3ZaQtZpU5Tp5SHmoJV__13k9EAHonD2mzeDNRr6ut-UmTiGtpXoq1Ryw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/transferlists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transferlists"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all active offers on Transfer list User2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYXNhZGFuaWxvdmljQHlhaG9vLmNvbSIsImV4cCI6MTYzODEwNDI1MywiaWF0IjoxNjM4MTAwNjUzfQ.MPjJ_VHL4DvkqfbV5hsyYC_xjUqYYv3ZaQtZpU5Tp5SHmoJV__13k9EAHonD2mzeDNRr6ut-UmTiGtpXoq1Ryw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/transferlists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transferlists"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Team details",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYXNhZGFuaWxvdmljQHlhaG9vLmNvbSIsImV4cCI6MTYzODEwNDI1MywiaWF0IjoxNjM4MTAwNjUzfQ.MPjJ_VHL4DvkqfbV5hsyYC_xjUqYYv3ZaQtZpU5Tp5SHmoJV__13k9EAHonD2mzeDNRr6ut-UmTiGtpXoq1Ryw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"e93898ef-821a-4155-839f-11984c14376d\",\r\n    \"name\" : \"FK Partizan\",\r\n    \"country\" : \"Serbia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/teams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teams"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Team details User2",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtaWdodHlAZ21haWwuY29tIiwiZXhwIjoxNjM4MTA0MjgwLCJpYXQiOjE2MzgxMDA2ODB9.dfaqmuhNccEXnEVRhDUaUpUy12FVBxIDc3zYSaWf1tp5AJ92Ey4M6k4QbWwYL2SdI5hwA_Fv8L89lf3RqyCBJQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"b065cd5d-aa8a-46ca-ad2c-ef9b960834ff\",\r\n    \"name\" : \"FC Manchester United\",\r\n    \"country\" : \"England\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/teams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teams"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Player details",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYXNhZGFuaWxvdmljQHlhaG9vLmNvbSIsImV4cCI6MTYzODEwNDI1MywiaWF0IjoxNjM4MTAwNjUzfQ.MPjJ_VHL4DvkqfbV5hsyYC_xjUqYYv3ZaQtZpU5Tp5SHmoJV__13k9EAHonD2mzeDNRr6ut-UmTiGtpXoq1Ryw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"5ac7d0d9-c9dd-4a1f-b799-19a7711a0cfc\",\r\n    \"firstName\" : \"Aleksandar\",\r\n    \"lastName\" : \"Mitrovic\",\r\n    \"country\" : \"Serbia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"players"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Player details User2",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtaWdodHlAZ21haWwuY29tIiwiZXhwIjoxNjM4MTA0MjgwLCJpYXQiOjE2MzgxMDA2ODB9.dfaqmuhNccEXnEVRhDUaUpUy12FVBxIDc3zYSaWf1tp5AJ92Ey4M6k4QbWwYL2SdI5hwA_Fv8L89lf3RqyCBJQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"fd6bea83-1cac-4b86-a82c-b0768ee3d184\",\r\n    \"firstName\" : \"Vladimir\",\r\n    \"lastName\" : \"Stojkovic\",\r\n    \"country\" : \"Serbia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"players"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Player On Transfer List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYXNhZGFuaWxvdmljQHlhaG9vLmNvbSIsImV4cCI6MTYzODEwNDI1MywiaWF0IjoxNjM4MTAwNjUzfQ.MPjJ_VHL4DvkqfbV5hsyYC_xjUqYYv3ZaQtZpU5Tp5SHmoJV__13k9EAHonD2mzeDNRr6ut-UmTiGtpXoq1Ryw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"playerId\" : \"5ac7d0d9-c9dd-4a1f-b799-19a7711a0cfc\",\r\n\t\"price\" : 3000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transferlists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transferlists"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Player On Transfer List User2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtaWdodHlAZ21haWwuY29tIiwiZXhwIjoxNjM4MTA0MjgwLCJpYXQiOjE2MzgxMDA2ODB9.dfaqmuhNccEXnEVRhDUaUpUy12FVBxIDc3zYSaWf1tp5AJ92Ey4M6k4QbWwYL2SdI5hwA_Fv8L89lf3RqyCBJQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"playerId\" : \"fd6bea83-1cac-4b86-a82c-b0768ee3d184\",\r\n\t\"price\" : 2000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transferlists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transferlists"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Buy Player On Transfer List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYXNhZGFuaWxvdmljQHlhaG9vLmNvbSIsImV4cCI6MTYzODEwNDI1MywiaWF0IjoxNjM4MTAwNjUzfQ.MPjJ_VHL4DvkqfbV5hsyYC_xjUqYYv3ZaQtZpU5Tp5SHmoJV__13k9EAHonD2mzeDNRr6ut-UmTiGtpXoq1Ryw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"5b9645c0-32f9-4525-98b4-99a55133a70a\",\r\n    \"playerId\": \"fd6bea83-1cac-4b86-a82c-b0768ee3d184\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transferlists/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transferlists",
+						"buy"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Buy Player On Transfer List User2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtaWdodHlAZ21haWwuY29tIiwiZXhwIjoxNjM4MTA0MjgwLCJpYXQiOjE2MzgxMDA2ODB9.dfaqmuhNccEXnEVRhDUaUpUy12FVBxIDc3zYSaWf1tp5AJ92Ey4M6k4QbWwYL2SdI5hwA_Fv8L89lf3RqyCBJQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"6c3db3b0-1155-4147-b113-d46bfb45ba15\",\r\n    \"playerId\": \"5ac7d0d9-c9dd-4a1f-b799-19a7711a0cfc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transferlists/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transferlists",
+						"buy"
+					]
+				},
+				"description": "Sign Up for Soccer Manager"
+			},
+			"response": []
+		}
+	]
+}
